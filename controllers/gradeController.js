@@ -26,11 +26,11 @@ const findAll = async (req, res) => {
     ? { name: { $regex: new RegExp(name), $options: 'i' } }
     : {};
 
-  const student = await studentModel.find(name);
-
-  res.send(student);
-
   try {
+    const student = await studentModel.find(condition);
+
+    res.send(student);
+
     logger.info(`GET /grade`);
   } catch (error) {
     res
