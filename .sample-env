@@ -1,3 +1,4 @@
 MONGODB=URL_CONEXAO
-ADDRESS=http://localhost
 PORT=8081
+HOST_CORS=http://localhost
+PORT_CORS=8080
