@@ -1,6 +1,6 @@
 import { db } from '../models/index.js';
 import { logger } from '../config/logger.js';
-import { studentModel } from '../models/student.js';
+import { studentModel } from '../models/Students.js';
 
 const create = async (req, res) => {
   try {
